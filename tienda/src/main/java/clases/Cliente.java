@@ -5,7 +5,7 @@ public class Cliente {
     //atributos
     public String nombre;
     public String cedula;
-    public byte edad;
+    public int edad;
     public String telefono;
     boolean aplicaDescuento;
 
@@ -20,4 +20,11 @@ public class Cliente {
         return "oe";
     }
 
+    public Cliente(String nombre, String cedula, int edad, String telefono, boolean aplicaDescuento) {
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.edad = edad;
+        this.telefono = telefono;
+        this.aplicaDescuento = aplicaDescuento;
+    }
 }
